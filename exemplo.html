@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script lang="Javascript">
+        function soma()
+        {
+            var resultado, n1, n2;
+            n1 = parseInt(document.frm.num1.value);
+            n2 = parseInt(document.frm.num2.value);
+            resultado = (n1+n2);
+            //document.write(resultado)
+            document.getElementById("alvo").innerHTML = "<b>"+ resultado +"<b>";
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        1º valor: <input type="text" name="num1" size="5" value="0"><br>
+        2º valor: <input type="text" name="num2" size="5" value="0"><br>
+        <input type="button" value="Somar" name="vai" onclick="soma();">
+    </form>
+
+    <p id="alvo"></p>
+</body>
+</html>

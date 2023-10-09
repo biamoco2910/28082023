@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Média Aritmética</title>
+    <script lang="Javascript">
+        function media()
+        {
+            var resultado, n1, n2, n3, n4;
+            n1 = parseFloat(document.qst.num1.value);
+            n2 = parseFloat(document.qst.num2.value);
+            n3 = parseFloat(document.qst.num3.value);
+            n4 = parseFloat(document.qst.num4.value);
+            resultado = ((n1 + n2 + n3 + n4) / 4);
+            document.getElementById("resposta").innerHTML = "<b>"+ resultado +"<b>";
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Calculadora de Média Aritmética</h1>
+
+    <form name="qst">
+        Informe o primeiro valor: <input type="text" name="num1" size="5" value="0"><br>
+        Informe o segundo valor: <input type="text" name="num2" size="5" value="0"><br>
+        Informe o terceiro valor: <input type="text" name="num3" size="5" value="0"><br>
+        Informe o quarto valor: <input type="text" name="num4" size="5" value="0"><br>
+        <input type="button" value="Calcular Média" name="vai" onclick="media();">
+    </form>
+
+    <p id="resposta"></p>
+
+</body>
+</html>
